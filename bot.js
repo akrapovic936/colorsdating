@@ -4,7 +4,7 @@ const prefix = '$'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`By Atlantic |$roles `,"http://twitch.tv/S-F")
+client.user.setGame(`By Squirrel `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -30,7 +30,7 @@ client.user.setGame(`By Atlantic |$roles `,"http://twitch.tv/S-F")
 
 
 
-const developers = ["487356411391770625","487314985362391060" , "491806666002530346"]
+const developers = ["494359769268617217"]
 const adminprefix = "$";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -69,7 +69,7 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 
 client.on('message', msg => {//msg
     if (msg.content === 'colors') {
-      if (msg.channel.id !== "492519184228679683") return;
+      if (msg.channel.id !== "841307344969007124") return;
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/466153403475558400/469301275180400651/colors1.png"})
     }
   });;
@@ -79,7 +79,7 @@ const Client = require('discord.js');
 client.on('message', message => {
     let args = message.content.split(' ').slice(1);
 if(message.content.split(' ')[0] == 'color'){
-if (message.channel.id !== "492519184228679683") return;
+if (message.channel.id !== "841307344969007124") return;
      const embedd = new Discord.RichEmbed()
 .setFooter('Requested by '+message.author.username, message.author.avatarURL)
 .setDescription(`**There's No Color With This Number ** ❌ `)
